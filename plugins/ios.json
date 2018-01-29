@@ -1,0 +1,44 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-brightness": {
+      "PACKAGE_NAME": "com.credan.saas"
+    },
+    "cordova-plugin-contacts": {
+      "PACKAGE_NAME": "com.credan.saas"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.credan.saas"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.credan.saas"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.credan.saas"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.credan.saas"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.credan.saas"
+    },
+    "jpush-phonegap-plugin": {
+      "APP_KEY": "923d3a1be6fae34804d6bd68",
+      "PACKAGE_NAME": "com.credan.saas"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.credan.saas"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-jcore": {
+      "PACKAGE_NAME": "com.credan.saas"
+    }
+  }
+}

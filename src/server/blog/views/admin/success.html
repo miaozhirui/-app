@@ -1,0 +1,16 @@
+{% extends './layout.html' %}
+{%block main%}
+
+<div class="container">
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <div class="panel-title">操作成功</div>
+        </div>
+        <div class="panel-body">
+            <a href="{{ url }}">{{ message }}</a>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

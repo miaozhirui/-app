@@ -1,0 +1,15 @@
+{
+    "statusCode": 3004,
+    "message": "个人信息",
+    "data": {
+        "item3IdCard": "Y",
+        "status": true,
+        "cashLimit": "1500.00",
+        "Phone": "17301725868",
+        "IdNum": "430981198505013514",
+        "GreditLimit": "5000.00",
+        "Name": "刘伟"
+    },
+    "otherMsg": "",
+    "success": false
+}

@@ -1,0 +1,148 @@
+.c2c-generate-iou {
+    background: #fff;
+    padding: 30px;
+
+    .write-area {
+
+        li {
+            height: 88px;
+            border: 1px solid #999999;
+            border-radius: 10px;
+            background: #fff;
+            margin-top: 30px;
+
+            input {
+                font-size: 30px;
+                text-indent: 10px;
+                display: block;
+                width: 100%;
+            }
+        }
+
+        li:nth-of-type(1) {
+
+            margin-top: 0px;
+        }
+    }
+
+    .iou {
+        width: 100%;
+        height: 600px;
+        margin-top: 30px;
+        p,
+        .content {
+
+            font-size: 34px;
+            background: #fff;
+            font-weight: 400;
+        }
+
+        .content {
+            text-indent: 2em;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            line-height: 50px;
+
+            span {
+
+                border-bottom: 1px solid #000;
+                width: 80px;
+            }
+        }
+    }
+
+    .footer {
+        margin-top: 30px;
+        button {
+            height: 88px;
+            background: #31abf9;
+            color: #fff;
+            display: block;
+            width: 100%;
+            font-size: 34px;
+        }
+    }
+
+    .write-name {
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        background: #fff;
+        p {
+            font-size: 34px;
+            text-align: center;
+            color: #000;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        .name {
+
+            width: 100%;
+            height: 500px;
+            border: 1px solid #333333;
+            overflow: hidden;
+        }
+        .footer {
+            padding: 30px;
+            .cancel {
+                border: 1px solid #333333;
+                background: #fff;
+                color: #333333;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    #qiantiao,
+    #qianming {
+
+        display: none;
+    }
+    .merge-image {
+
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        background: rgba(0, 0, 0, 0.6);
+
+        .img-wrap {
+            
+            position: absolute;
+            top:80px;
+            left:50%;
+            transform:translate(-50%,0);
+            width:690px;
+            background: #fff;
+
+            p {
+                text-align: center;
+                font-size: 34px;
+                color: #fff;
+                position: absolute;
+                height:88px;
+                line-height: 88px;
+                top:-88px;
+                width: 690px;
+                text-align: center;
+
+            }
+
+            .close-icon{
+
+                width:100px;
+                height:100px;
+                position: absolute;
+                left:50%;
+                bottom:-120px;
+                transform:translate(-50%, 0);
+                border-radius: 50%;
+                background: url(./images/close_icon.png) no-repeat center;
+                background-size: contain;
+            }
+        }
+    }
+}

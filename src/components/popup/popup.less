@@ -1,0 +1,204 @@
+// 弹窗样式
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 102;
+    width: 584px;
+    border-radius: 10px;
+    overflow: hidden;
+    &.popup-showing {
+        display: block;
+    }
+    .popup.default {
+        .main {
+            background: rgba(255, 255, 255, 0.95);
+            .popup-head {
+                
+                padding-top: 32px;
+                .popup-title {
+
+                    text-align: center;
+                    font-size: 32px;
+                    color: #4a4a4a;
+                }
+            }
+            .popup-body {
+                padding: 30px;
+                text-align: center;
+                color: #4A4A4A;
+                font-size: 34px;
+            }
+        }
+        .popup-buttons {
+            margin-top: -1px;
+            border-top: 1px solid #efefef;
+            button {
+                height: 88px;
+                display: block;
+                width: 100%;
+                font-size: 32px;
+                color: #4a4a4a;
+                background: rgba(255, 255, 255, 0.95);
+                border-radius: 0px;
+            }
+            button.highlight {
+                background: rgba(255, 255, 255, 0.85);
+            }
+        }
+    }
+   
+    
+}
+
+// 弹窗背景样式
+.backdrop {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    display: none;
+    z-index: 101;
+    transition: .1s opacity linear;
+    opacity: 0;
+    &.visible {
+        display: block;
+    }
+    &.active {
+        opacity: 1;
+    }
+}
+
+.popup-container.popup-hidden .popup {
+    -webkit-animation-name: scaleOut;
+    animation-name: scaleOut;
+    -webkit-animation-duration: .1s;
+    animation-duration: .1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+.popup-container.active .popup {
+    -webkit-animation-name: superScaleIn;
+    animation-name: superScaleIn;
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+.popup-container[effect='scale'] {
+    &.popup-hidden .popup {
+        -webkit-animation-name: customScaleOut;
+        animation-name: customScaleOut;
+        -webkit-animation-duration: .25s;
+        animation-duration: .25s;
+    }
+    &.active .popup {
+        -webkit-animation-name: customScaleIn;
+        animation-name: customScaleIn;
+        -webkit-animation-duration: .25s;
+        animation-duration: .25s;
+    }
+}
+
+// Scale Effect
+// Scale In
+// -------------------------------
+@-webkit-keyframes customScaleIn {
+    from {
+        -webkit-transform: scale(0.3);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes customScaleIn {
+    from {
+        -webkit-transform: scale(0.3);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+
+// Scale Out
+// -------------------------------
+@-webkit-keyframes customScaleOut {
+    from {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: scale(0.3);
+        opacity: 0;
+    }
+}
+
+@keyframes customScaleOut {
+    from {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: scale(0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes superScaleIn {
+    from {
+        -webkit-transform: scale(1.2);
+        opacity: 0
+    }
+    to {
+        -webkit-transform: scale(1);
+        opacity: 1
+    }
+}
+
+@keyframes superScaleIn {
+    from {
+        transform: scale(1.2);
+        opacity: 0
+    }
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes scaleOut {
+    from {
+        -webkit-transform: scale(1);
+        opacity: 1
+    }
+    to {
+        -webkit-transform: scale(0.8);
+        opacity: 0
+    }
+}
+
+@keyframes scaleOut {
+    from {
+        transform: scale(1);
+        opacity: 1
+    }
+    to {
+        transform: scale(0.8);
+        opacity: 0
+    }
+}

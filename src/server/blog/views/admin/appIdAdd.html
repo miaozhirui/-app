@@ -1,0 +1,44 @@
+{% extends './layout.html' %}
+{% block main %}
+    <div class="container">
+        <form  class="form-horizontal">
+
+            <div class="form-group">
+                <label for="" class="col-sm-2 control-label">小程序名称</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="" placeholder="请输入小程序名称" name="appName">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="" class="col-sm-2 control-label">小程序标识</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="" placeholder="请填入小程序唯一的标识" name="appTag">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="" class="col-sm-2 control-label">appId</label>
+                <div class="col-sm-10">
+
+                    <input type="text" class="form-control" id="" placeholder="请输入appId" name="appId">
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="" class="col-sm-2 control-label">appSecret</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="" placeholder="请输入小程序appSecret" name="appSecret">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default" id="appId">添加</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+{% endblock %}

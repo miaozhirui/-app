@@ -1,0 +1,26 @@
+icon: '&#xe610;'
+props:
+  show-loading:
+    type: Boolean
+    default: true
+    en: if show loading icon
+    zh-CN: 是否显示 loading 图标
+  tip:
+    en: tip text. Show dot if there is no text and loading icon
+    zh-CN: 提示文字，如果没有显示图标也没有显示文字，则显示点
+  background-color:
+    type: String
+    default: '#ffffff'
+    en: background color. Recommend to use @load-more-tip-background-color for global 
+    zh-CN: 背景颜色，需要配置以让文字与背景完全融合。推荐通过设置 less 变量 @load-more-tip-background-color 全局修改
+changes:
+  v2.6.0:
+    en:
+      - '[feature] support less variable @load-more-tip-background-color'
+    zh-CN:
+      - '[feature] 支持 @load-more-tip-background-color 全局设置文字背景颜色'
+  v2.0.0:
+    en:
+      - '[feature] Add `load-more` component'
+    zh-CN:
+      - '[feature] 增加`load-more`组件'

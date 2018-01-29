@@ -1,0 +1,42 @@
+{
+
+    "c2c-home-page": {
+
+        "title": "E借条",
+        "isHasBack": false
+    },
+    "c2c-my-orderlist":{
+
+        "title":"订单列表"
+    },
+    "c2c-user-iou-page":{
+        "title":"借条"
+    },
+    "c2c-user-look-signature":{
+
+        "title":"签名"
+    },
+    "c2c-user-to-signature":{
+
+        "title":"签名"
+    },
+    "cash-contact-submit":{
+        
+        "title":"联系人"
+    },
+    "cash-identity-submit":{
+        "title":"身份"
+    },
+    "cash-moreinfo-submit":{
+        "title":"详细信息"
+    },
+    "cash-submit":{
+        "title":"提交"
+    },
+    "timely-submit":{
+        "title":"借款信息"
+    },
+    "user-login":{
+        "title":"登录"
+    }
+}

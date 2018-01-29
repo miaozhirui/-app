@@ -1,0 +1,34 @@
+{% extends './layout.html' %}
+
+{% block main %}
+
+<div class="container">
+    <button class="btn btn-info col-sm-offset-10" id="publishApp">发布上线</button>
+    <div class="collapse" id="contentId">
+
+    </div>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>小程序名称</th>
+            <th>小程序标识</th>
+            <th>小程序appId</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for app in appList %}
+        <tr>
+            <td>{{ app.appName }}</td>
+            <td>{{ app.appTag }}</td>
+            <td>{{ app.appId }}</td>
+            <td>
+                <!--<button type="button" class="btn btn-info">上线</button>-->
+                <button type="button" class="btn btn-danger deleteApp" data-id="{{ app.appId }}" >删除</button>
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

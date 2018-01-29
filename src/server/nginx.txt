@@ -1,0 +1,173 @@
+
+一、
+1. nginx安装
+yum install -y gcc 
+yum install -y gcc-c++
+yum install -y pcre pcre-devel
+yum install -y zlib zlib-devel
+yum install -y openssl openssl-devel
+
+yum install gcc gcc-c++ pcre pcre-devel zlib zlib-devel openssl openssl-devel
+
+
+cd ~ && mkdir source && cd source
+wget http://nginx.org/download/nginx-1.12.0.tar.gz
+tar zxvf nginx-1.12.0.tar.gz
+cd nginx-1.12.0
+./configure
+make
+make install
+
+二、
+mysql的安装
+
+1. cd ~/source
+2. wget https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
+3. sudo rpm -Uvh platform-and-version-specific-package-name.rpm
+4. yum repolist all | grep mysql
+5. sudo yum install mysql-community-server
+6. sudo systemctl start mysqld.service
+7. sudo systemctl status mysqld.service
+8. sudo grep 'temporary password' /var/log/mysqld.log
+9. mysql -uroot -p + 临时的密码
+10. ALTER USER 'root'@'localhost' IDENTIFIED BY 'Credan!888';
+开启远程连接
+11. 
+    user mysql
+    select Host, User from user;
+    GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'Credan!888' WITH GRANT OPTION;
+        (第一个root表示用户名，%表示所有的电脑都可以连接，也可以设置某个ip地址运行连接，第二个root表示密码)
+          .表示任何数据库都可以被访问 %表示任意的ip都可以访问,这句话的意思表示允许数据库被任何主机以root用户以root(远程连接的密码，不是本地访问的密码)密码进行访问
+        )
+    flush privileges;刷新授权
+
+
+
+三、linux
+1. 
+commond+shift+ + 放大窗口
+commond+shift- - 缩小窗口
+
+ls pwd cd touch mkdir rm clear cp mv cat more grep echo 重定向 > 和>> 管道|
+
+2. 查阅命令帮助信息
+command --help
+man command
+
+ps -ef 显示所有进程的信息
+grep 是查找想要包含某个字符串的行
+ps -ef | grep nginx 查找包含nginx行的所有进程信息
+
+mkdir -p a/b/c/d
+
+rm删除的文件是无法在回收站找回来的
+
+tree
+tree -d 只显示目录，不显示文件
+cat 1.txt 查看1.txt里面的内容(-b查看输出带有行号,忽略空行；-n查看输出带有行号，包括空行)
+more 1.txt 查看1.txt里面的内容(先只显示开始的一部分，然后按住空格才显示接下的一部分, b回滚一屏， f前滚一屏， q退出)
+如果查看的内容少用cat, 如果查看的内容多可以用more
+
+grep n 1.txt(查看1.txt文本里面是否包含n) grep查看文本内容是否包含某个字符(-n显示匹配及行号，显示不包含匹配文本的所有行，-i忽略大小写)
+ps -ef | grep -n nginx查看nginx进程，并且包含行号
+
+grep ^2 node.js
+grep -n ^2 node.js
+grep -n 2$ node.js
+
+
+echo 111 > test.txt 输出到文件里面去，原来的内容会被替换掉
+echo 111 >> text.txt 输出到文件里面去，追加到文件末尾里面去
+
+tree -a src > text.txt 将src目录下面的所有的内容以tree的形式覆盖到text.txt文件里面去
+
+| 管道: 一个命令的输出通过管道作为另外一个命令的输出
+> 重定向替换
+>> 重定向追加
+
+shutdown 关机重启  
+    shutdown -r now 立即重启电脑
+ifconfig/ping 查看或配置网卡信息
+ssh scp 远程登录或者配置文件
+
+网卡是一个专门负责网络通讯的硬件设备
+ip地址是设置在网卡上面的地址信息
+(列子: 我们可以把电脑比作电话，网卡相当于SIM卡，ip地址相当于电话号码)
+
+ifconfig | grep inet 查询mac地址
+
+ssh客户端: 数据传输是加密的，防止信息泄露; 数据传输是压缩的，提高传输效率
+
+
+ip地址: 通过ip地址找到网络上面的计算机
+端口号: 通过端口号可以找到计算机上运行的应用程序
+常见服务端端口号:
+    01 ssh服务器 22
+    02 web服务器 80
+    03 https    443
+    04 ftp服务器 21
+
+
+ssh 登录远程服务器
+scp 远程拷贝文件
+
+scp -P port 源文件(/usr/nginx.txt) user@remote:目标文件(/root/nginx.txt)
+scp user@remote:目标文件(/root/nginx.txt) 源文件(/usr/nginx.txt)
+scp -r 源文件(/usr/demo) user@remote:目标文件(/root/demo)
+
+
+ssh高级
+    免密码登录
+        1. 配置公钥： 执行ssh-keygen即可生成ssh钥匙，一路回车
+        2. 上传公钥到服务器: 执行ssh-copy-id -p port user@remote,可以让远程服务器记住我们的公钥
+    配置别名
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

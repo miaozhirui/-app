@@ -1,0 +1,181 @@
+@import "../../common/css/color.less";
+
+.c2c-my-orderlist {
+
+    .content-list {
+        padding: 30px;
+        padding-bottom: 210px;
+        ul {
+
+            .list {
+                margin-bottom: 30px;
+                border-radius: 8px;
+                overflow: hidden;
+                position: relative;
+                .top {
+                    padding: 20px;
+                    padding-bottom: 0px;
+                    background: #fff;
+                    .left {
+                        font-size: 36px;
+                        font-weight: 700;
+                    }
+
+                    li:nth-of-type(1) {
+
+                        .left {
+                            color: #151515;
+                        }
+                    }
+
+                    li:nth-of-type(2) {
+
+                        margin-top: 10px;
+                        .left {
+                            font-weight: 300;
+                            font-size: 28px;
+                        }
+                    }
+                }
+
+                .middle {
+                    padding: 20px;
+                    padding-top: 0px;
+                    background: #fff;
+                }
+
+                .line {
+                    height: 20px;
+                    background: url(./images/billslistdivision.png) no-repeat center;
+                    background-size: cover;
+                }
+
+                .bottom {
+                    height: 98px;
+                    line-height: 98px;
+                    background: #fff;
+                    padding-right: 20px;
+                    margin-top: -5px;
+
+                    .left {
+                        text-indent: 30px;
+                        font-size: 28px;
+                        color: #000;
+                    }
+                    .right {
+                        text-align: right;
+                        font-size: 28px;
+                        color: #4BD394;
+
+                        span{
+
+                            display: inline-block;
+                            width:156px;
+                            height:58px;
+                            background: #4786F3;
+                            color:#fff;
+                            border-radius: 10px;
+                            text-align: center;
+                            line-height: 58px;
+                            margin-left:20px;
+
+                        }
+
+                        span.haswrite{
+                            background: #fff;
+                            border:1px solid #4786F3;
+                            color:#4786F3;
+                        }
+                    }
+                    .right.wait {
+
+                        color: #FFB000;
+                    }
+                    .right.overdue {
+
+                        color: red
+                    }
+                }
+
+                .left {
+
+                    color: #9a9a9a;
+                }
+            }
+        }
+    } //空内容的情况
+    .empty-content {
+        padding-top: 100px;
+
+        .no-bill-logo {
+
+            width: 428px;
+            height: 257px;
+            background: url('./images/no-bill.png') no-repeat center;
+            background-size: contain;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 32px;
+            text-align: center;
+            line-height: 150px;
+        }
+    }
+
+    .tips {
+
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        height: 210px;
+        background-color:@base-color; 
+        color: #fff;
+        padding:10px;
+
+        .top {
+            margin-bottom: 10px;
+            .left {
+                font-size: 36px;
+            }
+
+            .right{
+                .close{
+                    display: block;
+                    width:36px;
+                    height:36px;
+                    background: url(./images/close.png) no-repeat center;
+                    background-size: cover;
+                }
+            }
+        }
+        p{
+            font-size: 28px;
+        }
+        
+    }
+
+    .refresh{
+
+        position: fixed;
+        top:55%;
+        right:10px;
+        width:120px;
+        height:120px;
+        border-radius: 10px;
+        background: rgba(0,0,0,0.26);
+        
+        .icon{
+            display: block;
+            width:38px;
+            height:38px;
+            background: url(./images/refresh_icon.png) no-repeat center;
+            background-size: contain;
+        }
+        p{
+            color:#fff;
+            font-size: 17px;
+            margin-top: 5px;
+        }
+    }
+}

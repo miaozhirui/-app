@@ -1,0 +1,16 @@
+{% extends './layout.html' %}
+
+{%block main%}
+<div class="container">
+    <div class="panel panel-danger">
+        <div class="panel-heading">
+            <div class="panel-title">操作失败</div>
+        </div>
+        <div class="panel-body">
+            {{ message }}
+        </div>
+        <div class="panel-footer"><a href="javascript:window.history.back()">返回上一页</a></div>
+    </div>
+</div>
+
+{% endblock %}

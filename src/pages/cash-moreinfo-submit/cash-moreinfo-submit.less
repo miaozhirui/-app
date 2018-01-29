@@ -1,0 +1,67 @@
+#moreinfo-submit {
+    .info {
+        li {
+            padding-left: 30px;
+            padding-right: 30px;
+            background: #fff;
+            height: 80px;
+            line-height: 80px;
+            border-bottom: 1px solid #dedede;
+            position: relative;
+            .left {
+                font-size: 34px;
+                color: #000;
+            }
+            .right {
+                overflow: hidden;
+                input {
+                  font-size: 34px;
+                  text-align: right;
+                  padding-left: 30px;
+                  width: -webkit-fill-available;
+                }
+
+                .btnSelect {
+
+                  font-size: 34px;
+                  text-align: right;
+                  padding-left: 30px;
+                  width: -webkit-fill-available;
+                  padding-right: 40px;
+                  background: url(./images/arrow.jpg) center right no-repeat;
+                  background-size: 21px 38px;
+                }
+
+                .quote-pickers{
+                  opacity:0;
+                  position: absolute;
+                  top:0;
+                  left:0;
+                  width: 96%;
+                  height: 80px;
+                }
+
+            }
+            .time-pickers {
+                font-size: 34px;
+                .vux-cell-value {
+                  color: #000;
+                }
+            }
+        }
+        li:first-child{
+          background: #F8F8F8;
+          color: #909090;
+          font-size: 32px;
+        }
+        li:last-child{
+            border-bottom: 0px;
+        }
+    }
+
+    footer{
+        padding: 30px;
+        position: fixed;
+        bottom:0px;
+    }
+}

@@ -1,0 +1,95 @@
+@import '../../common/css/color.less';
+#identity-submit {
+    .content-pic {
+        padding: 30px;
+        .top {
+            background: #E9EEF5;
+            height: 273px;
+            border-radius: 10px;
+            padding-top: 20px;
+            display: flex;
+            .handinBox {
+                // background: url(./images/identityphoto.png) no-repeat center;
+                width: 284px;
+                height: 253px;
+                line-height: 253px;
+                margin-left: 20px;
+                background-size: contain;
+            }
+            .photo-info {
+                font-size: 26px;
+                padding: 20px;
+            }
+        }
+        .center {
+            border-radius: 0px 0px 8px 8px;
+            font-size: 30px;
+            color: #fff;
+            height: 65px;
+            line-height: 65px;
+            display: block;
+            text-align: center;
+            background-color: @base-color;
+            position: relative;
+            .photoupload {
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 65px;
+            }
+        }
+
+        .middle {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            .frontBox {
+                width: 324px;
+                height: 215px;
+                line-height: 215px;
+                background-size: contain;
+            }
+            .reverseBox {
+                width: 324px;
+                height: 215px;
+                line-height: 215px;
+                background-size: contain;
+            }
+            .bottom {
+                border-radius: 0px 0px 8px 8px;
+                font-size: 30px;
+                color: #fff;
+                height: 65px;
+                line-height: 65px;
+                display: block;
+                text-align: center;
+                background-color: @base-color;
+                position: relative;
+            }
+            .photoupload {
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 65px;
+            }
+        }
+    }
+
+    .item-layout {
+
+        li {
+            .left {
+                width: 220px;
+            }
+        }
+    }
+
+    footer {
+        margin-top: 88px;
+        padding-bottom: 30px;
+    }
+}

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.credan.saas" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>快乐达</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="miaozhirui@gmail.com" href="https://credan.com">
+       Dark~
+    </author>
+    <content src="pages/c2c-home-page.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon density="ldpi" src="res/icon/android/ldpi.png" />
+        <icon density="mdpi" src="res/icon/android/mdpi.png" />
+        <icon density="hdpi" src="res/icon/android/hdpi.png" />
+        <icon density="xhdpi" src="res/icon/android/xhdpi.png" />
+        <icon density="xxhdpi" src="res/icon/android/xxhdpi.png" />
+        <splash density="port-hdpi" src="res/screen/android/splash-port-hdpi.png" />
+        <splash density="port-mdpi" src="res/screen/android/splash-port-mdpi.png" />
+        <splash density="port-xhdpi" src="res/screen/android/splash-port-xhdpi.png" />
+        <splash density="port-xxhdpi" src="res/screen/android/splash-port-xxhdpi.png" />
+        <preference name="SplashScreenDelay" value="4000" />
+        <preference name="FadeSplashScreen" value="false" />
+        <preference name="SplashMaintainAspectRatio" value="true|false" />
+        <preference name="SplashShowOnlyFirstTime" value="true|false" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <config-file parent="CFBundleURLTypes" target="*-Info.plist">
+            <key>NSContactsUsageDescription</key>
+            <string>拒绝可能导致申请失败哦!</string>
+            <key>NSLocationAlwaysUsageDescription</key>
+            <string>拒绝可能导致申请失败哦!</string>
+        </config-file>
+        <icon height="57" src="res/icon/ios/icon.png" width="57" />
+        <icon height="114" src="res/icon/ios/icon@2x.png" width="114" />
+        <icon height="58" src="res/icon/ios/icon-small@2x.png" width="58" />
+        <icon height="87" src="res/icon/ios/icon-small@3x.png" width="87" />
+        <icon height="80" src="res/icon/ios/icon-40@2x.png" width="80" />
+        <icon height="180" src="res/icon/ios/icon-60@3x.png" width="180" />
+        <icon height="120" src="res/icon/ios/icon-60@2x.png" width="120" />
+        <splash height="480" src="res/screen/ios/Default~iphone.png" width="320" />
+        <splash height="960" src="res/screen/ios/Default@2x~iphone.png" width="640" />
+        <splash height="1136" src="res/screen/ios/Default-568h@2x~iphone.png" width="640" />
+        <splash height="1334" src="res/screen/ios/Default-667h.png" width="750" />
+        <splash height="2208" src="res/screen/ios/Default-736h.png" width="1242" />
+        <splash height="2436" src="res/screen/ios/Default-2436h.png" width="1125" />
+    </platform>
+    <preference name="Orientation" value="portrait" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="WebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*/*" />
+    <allow-navigation href="data:*" />
+    <chcp>
+        <auto-download enabled="true" />
+        <auto-install enabled="true" />
+        <config-file url="http://uctest.credan.com/app2.0/www/chcp.json" />
+    </chcp>
+    <engine name="android" spec="^6.4.0" />
+    <engine name="ios" spec="^4.5.4" />
+    <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
+    <plugin name="cordova-plugin-contacts" spec="^3.0.0" />
+    <plugin name="cordova-plugin-device" spec="^1.1.7" />
+    <plugin name="cordova-plugin-dialogs" spec="^1.3.4" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^1.7.2" />
+    <plugin name="jpush-phonegap-plugin" spec="^3.2.12">
+        <variable name="APP_KEY" value="923d3a1be6fae34804d6bd68" />
+    </plugin>
+    <plugin name="cordova-plugin-splashscreen" spec="^4.1.0" />
+    <plugin name="cordova-plugin-brightness" spec="^0.1.5" />
+    <plugin name="cordova-plugin-geolocation" spec="^4.0.1" />
+</widget>

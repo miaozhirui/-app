@@ -1,0 +1,76 @@
+@import '../../common/css/color.less';
+#app{
+
+    .content{
+        .desc{
+            height:88px;
+            font-size: 32px;
+            color:#9a9a9a;
+            line-height: 88px;
+            text-indent: 20px;
+        }
+        .list{
+            padding-left:20px;
+            background: #fff;
+            li{
+                padding-right:20px;
+                border-bottom: 1px solid #dedede;
+                height:88px;
+                .left{
+                    font-size: 34px;
+                    color:#000;
+                }
+                .right{
+                     input {
+                       font-size: 34px;
+                       width: 100%;
+                       text-align: right;
+                       padding-right: 40px;
+                       background: url(./images/arrow.jpg) center right no-repeat;
+                       background-size: 21px 38px;
+                     }
+                }
+            }
+            li:last-child{
+
+                border-bottom: 0px;
+            }
+        }
+    }
+
+    .footer{
+      position:fixed;
+      bottom: 0px;
+      width: 100%;
+      padding-bottom: 30px;
+
+    }
+
+    .dialog {
+    
+      .icon {
+        background: url(./images/gps.png) no-repeat center;
+        width: 220px;
+        height: 220px;
+        background-size: contain;
+        margin: 0 auto;
+      }
+      .content {
+        margin: 40px;
+        font-size: 26px;
+        text-align: center;
+      }
+      .btnDialog {
+        height: 72px;
+        line-height: 72px;
+        background: @base-color;
+        border-radius: 10px;
+        font-size: 30px;
+        color: #fff;
+        display: block;
+        text-align: center;
+        width: -webkit-fill-available;
+        margin: 27px;
+      }
+    }
+}

@@ -1,0 +1,42 @@
+{% extends './layout.html' %}
+{%block main%}
+
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a href="/admin/index">后台首页</a></li>
+        <li><span>分类列表</span></li>
+
+    </ol>
+
+    <table class="table table-striped table-hover">
+        <tr>
+            <th>栏目id</th>
+            <th>栏目名称</th>
+        </tr>
+    {% for category in categoryList %}
+    <tr>
+        <td>{{ JSON.stringify(category._id) }}</td>
+        <td>{{ category.name }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+
+    <nav aria-label="...">
+        <ul class="pager">
+            {% if currentPage == 1 %}
+                <li class="previous"><a href="/admin/categoryList?page=1"><span aria-hidden="true">&larr;</span> 上一页</a></li>
+            {% else %}
+                <li class="previous"><a href="/admin/categoryList?page={{ currentPage-1 }}"><span aria-hidden="true">&larr;</span> 上一页</a></li>
+            {% endif %}
+
+            {% if currentPage == pages %}
+                <li class="next"><a href="/admin/categoryList?page={{ currentPage }}">下一页 <span aria-hidden="true">&rarr;</span></a></li>
+            {% else %}
+                <li class="next"><a href="/admin/categoryList?page={{ currentPage +1 }}">下一页 <span aria-hidden="true">&rarr;</span></a></li>
+            {% endif %}
+
+        </ul>
+    </nav>
+</div>
+
+{% endblock %}

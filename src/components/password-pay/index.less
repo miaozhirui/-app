@@ -1,0 +1,99 @@
+.password-pay {
+
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+
+
+
+    .password-action-area {
+
+        height: 36%;
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        background: #fff;
+        padding: 0 50px;
+
+        .tem-password {
+            position: absolute;
+            z-index: -1;
+            left: -100px;
+        }
+        .top {
+            padding: 80px 0px;
+
+            .left {
+
+                .icon {
+                    width: 30px;
+                    height: 30px;
+                    border: 0px solid red;
+                    display: block;
+                    background: url('./images/close.png') no-repeat center;
+                    background-size: cover;
+                }
+            }
+
+            .right {
+
+                font-size: 34px;
+                span {
+                    margin-left: 10px;
+                    font-size: 26px;
+                }
+            }
+        }
+
+        .middle {
+            width: 618px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-right: 0px;
+            position: relative;
+            overflow: hidden;
+
+            ul {
+
+                border: 1px solid #d8d8d8;
+                li {
+                    border-right: 1px solid #d8d8d8;
+                    width: 100px;
+                    height: 100px;
+
+                    .dot {
+                        width: 40px;
+                        height: 40px;
+                        background: #000;
+                        border-radius: 50%;
+                    }
+                }
+                li:last-child {
+                    border-right: 0px;
+                }
+            }
+            input {
+                position: absolute;
+                top: 0px;
+                height: 100px;
+                border: 1px solid red;
+                width: 100%;
+                opacity: 0;
+                text-indent: 1000px;
+                caret-color: #fff;
+            }
+        }
+
+        .bottom {
+
+            text-align: right;
+            color: #36b046;
+            margin-top: 50px;
+            font-size: 32px;
+        }
+    }
+}

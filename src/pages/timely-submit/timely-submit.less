@@ -1,0 +1,154 @@
+@import '../../common/css/color.less';
+
+.timely-submit {
+    background: #fff;
+
+    .purpose {
+
+        height: 88px;
+        padding-left: 30px;
+        
+        .left {
+
+            font-size: 34px;
+            color: #000;
+            border-bottom: 1px solid #E2E2E2;
+        }
+
+        .right {
+
+            color: #000;
+            font-size: 34px;
+            padding-right: 30px;
+            border-bottom: 1px solid #E2E2E2;
+            .icon-arrow {
+
+                width: 21px;
+                height: 38px;
+                display: block;
+                background: url(./images/icon-arrow.png) no-repeat center;
+                background-size: contain;
+                margin-left: 24px;
+            }
+        }
+
+        .right.default {
+
+            color: #9A9A9A;
+        }
+    }
+
+    .static {
+
+        padding-left: 30px;
+        height: 88px;
+        .left {
+            font-size: 34px;
+            border-bottom: 1px solid #E2E2E2;
+        }
+        .right {
+            font-size: 34px;
+            padding-right: 30px;
+            border-bottom: 1px solid #E2E2E2;
+        }
+    }
+    .static-cycle {
+
+        border-bottom: 0px;
+    }
+
+    .desc {
+        height: 90px;
+        line-height: 90px;
+        padding-left: 30px;
+        color: #151515;
+        font-size: 34px;
+        span {
+            font-size: 28px;
+        }
+    }
+
+    .money {
+        .action-area {
+
+            height: 250px;
+
+            .left {
+                padding-left: 80px;
+
+                .icon {
+                    background: url(./images/jian_default.png) no-repeat center;
+                    background-size: contain;
+                }
+            }
+
+            .center {
+
+                width: 300px;
+                input {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 90px;
+                    color: @base-color;
+                }
+                .line {
+                    display: block;
+                    height: 2px;
+                    border-bottom: 1px solid @base-color;
+                    margin-top: 20px;
+                }
+            }
+
+            .right {
+                padding-right: 80px;
+
+                .icon {
+                    background: url(./images/jia_default.png) no-repeat center;
+                    background-size: contain;
+                }
+            }
+
+            .icon {
+                width: 70px;
+                height: 70px;
+                display: block;
+            }
+        }
+    }
+
+    .days {
+
+        padding-bottom: 30px;
+        .action-area {
+            ul {
+                padding: 0 20px;
+                li {
+                    width: 208px;
+                    height: 138px;
+                    border: 1px solid @base-color;
+                    text-align: center;
+                    line-height: 138px;
+                    font-size: 34px;
+                    color: #9a9a9a;
+                    border-radius: 20px;
+                    margin-right: 20px;
+                }
+                li:last-child {
+                    margin-right: 0px;
+                }
+                li.selected {
+                    color: #fff;
+                    background: @base-color;
+                    border: 0px;
+                }
+            }
+        }
+    }
+    footer {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        padding: 30px;
+    }
+}

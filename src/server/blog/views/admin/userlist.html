@@ -1,0 +1,45 @@
+{% extends './layout.html' %}
+{%block main%}
+<div class="container">
+    <ol class="breadcrumb">
+      <li><a href="/admin/userlist">用户管理</a></li>
+      <li><span>用户列表</span></li>
+    </ol>
+
+    <table class="table table-hover table-striped">
+        <tr>
+            <th>ID</th>
+            <th>用户名</th>
+            <th>密码</th>
+            <th>是否是管理员</th>
+        </tr>
+
+        {% for user in userlist %}
+        <tr>
+            <td>{{ JSON.stringify(user._id) }}</td>
+            <td>{{ user.username }}</td>
+            <td>{{ user.password }}</td>
+            <td>
+                {% if user.isAdmin %}是{% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <nav aria-label="...">
+        <ul class="pager">
+            {% if currentPage == 1 %}
+                <li class="previous"><a href="/admin/userlist?page=1"><span aria-hidden="true">&larr;</span> 上一页</a></li>
+            {% else %}
+                <li class="previous"><a href="/admin/userlist?page={{ currentPage - 1 }}"><span aria-hidden="true">&larr;</span> 上一页</a></li>
+            {% endif %}
+
+            {% if currentPage == pages %}
+                <li class="next"><a href="/admin/userlist?page={{ pages }}">下一页 <span aria-hidden="true">&rarr;</span></a></li>
+            {% else %}
+                <li class="next"><a href="/admin/userlist?page={{ currentPage + 1 }}">下一页 <span aria-hidden="true">&rarr;</span></a></li>
+            {% endif %}
+        </ul>
+    </nav>
+</div>
+{% endblock %}
