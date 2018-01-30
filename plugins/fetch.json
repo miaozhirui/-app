@@ -1,84 +1,92 @@
 {
-  "cordova-plugin-whitelist": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-whitelist@^1.3.3"
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@^1.3.3"
+        },
+        "is_top_level": true,
+        "variables": {}
     },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-plugin-dialogs": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-dialogs@^1.3.4"
+    "cordova-plugin-dialogs": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-dialogs@^1.3.4"
+        },
+        "is_top_level": true,
+        "variables": {}
     },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-plugin-device": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-device@^1.1.7"
+    "cordova-plugin-device": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-device@^1.1.7"
+        },
+        "is_top_level": true,
+        "variables": {}
     },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-plugin-jcore": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-jcore"
+    "cordova-plugin-jcore": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-jcore"
+        },
+        "is_top_level": false,
+        "variables": {}
     },
-    "is_top_level": false,
-    "variables": {}
-  },
-  "cordova-plugin-contacts": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-contacts@^3.0.0"
+    "cordova-plugin-contacts": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-contacts@^3.0.0"
+        },
+        "is_top_level": true,
+        "variables": {}
     },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-plugin-inappbrowser": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-inappbrowser@^1.7.2"
+    "cordova-plugin-inappbrowser": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-inappbrowser@^1.7.2"
+        },
+        "is_top_level": true,
+        "variables": {}
     },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "jpush-phonegap-plugin": {
-    "source": {
-      "type": "registry",
-      "id": "jpush-phonegap-plugin@^3.2.12"
+    "jpush-phonegap-plugin": {
+        "source": {
+            "type": "registry",
+            "id": "jpush-phonegap-plugin@^3.2.12"
+        },
+        "is_top_level": true,
+        "variables": {
+            "APP_KEY": "923d3a1be6fae34804d6bd68"
+        }
     },
-    "is_top_level": true,
-    "variables": {
-      "APP_KEY": "923d3a1be6fae34804d6bd68"
+    "cordova-plugin-splashscreen": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-splashscreen@^4.1.0"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-brightness": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-brightness"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-geolocation": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-geolocation@^4.0.1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-hot-code-push-plugin": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-hot-code-push-plugin@^1.5.3"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
-  },
-  "cordova-plugin-splashscreen": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-splashscreen@^4.1.0"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-plugin-brightness": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-brightness"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-plugin-geolocation": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-geolocation@^4.0.1"
-    },
-    "is_top_level": true,
-    "variables": {}
-  }
 }

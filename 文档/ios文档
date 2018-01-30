@@ -1,13 +1,11 @@
 一、权限相关
-    1. 相机权限描述：
-    <key>NSCameraUsageDescription</key>
-    <string>cameraDesciption</string>
-    2.通信录
-    <key>NSContactsUsageDescription</key>
-    <string>contactsDesciption</string>
-    3.麦克风：
-    <key>NSMicrophoneUsageDescription</key>
-    <string>microphoneDesciption</string>
-    4.相册：
     <key>NSPhotoLibraryUsageDescription</key>
-    <string>photoLibraryDesciption</string>
+    <string>请允许上传图片哦</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>拒绝可能导致申请失败哦</string>
+    <key>LSApplicationCategoryType</key>
+    <string/>
+    <key>NSLocationUsageDescription</key>
+    <string>拒绝可能导致申请失败哦!</string>
+    <key>NSContactsUsageDescription</key>
+    <string>拒绝可能导致申请失败哦</string>

@@ -12,8 +12,11 @@ const page = {
     
     created() {
         
-        this.productId = 7;
-        this.firmId = 6;
+        let productId = 7,
+            firmId = 6;
+
+        this.productId = productId;
+        this.firmId = firmId;
         
         let baseId = utils.getParams('baseId'),
             loanerSid = utils.getParams('loanerSid');

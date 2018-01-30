@@ -27,9 +27,9 @@ export default {
                     }
                 })
 
-            },(data) => {
+            }, (data) => {
 
-                if(data.code ==1 ){
+                if (data.code == 1) {
 
                     utils.go('c2c-my-orderlist');
                 }
@@ -56,3 +56,9 @@ export default {
 
 
 }
+
+
+
+
+
+
