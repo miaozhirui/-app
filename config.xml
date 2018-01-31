@@ -62,7 +62,7 @@
     <allow-navigation href="https://*/*" />
     <allow-navigation href="data:*" />
     <chcp>
-        <config-file url="http://wxapp.credan.com/static/json/chcp.json" />
+        <config-file url="http://wxapp.credan.com/app/chcp.json" />
     </chcp>
     <engine name="android" spec="^6.4.0" />
     <engine name="ios" spec="^4.5.4" />
