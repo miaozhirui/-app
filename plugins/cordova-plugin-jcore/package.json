@@ -1,57 +1,7 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "cordova-plugin-jcore@^1.1.10",
-        "scope": null,
-        "escapedName": "cordova-plugin-jcore",
-        "name": "cordova-plugin-jcore",
-        "rawSpec": "^1.1.10",
-        "spec": ">=1.1.10 <2.0.0",
-        "type": "range"
-      },
-      "/Users/mzr/credan_app_hybrid"
-    ]
-  ],
-  "_from": "cordova-plugin-jcore@>=1.1.10 <2.0.0",
-  "_id": "cordova-plugin-jcore@1.1.10",
-  "_inCache": true,
-  "_location": "/cordova-plugin-jcore",
-  "_nodeVersion": "8.1.3",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/cordova-plugin-jcore-1.1.10.tgz_1507871597857_0.23150125169195235"
-  },
-  "_npmUser": {
-    "name": "jpush",
-    "email": "support@jpush.cn"
-  },
-  "_npmVersion": "5.3.0",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "cordova-plugin-jcore@^1.1.10",
-    "scope": null,
-    "escapedName": "cordova-plugin-jcore",
-    "name": "cordova-plugin-jcore",
-    "rawSpec": "^1.1.10",
-    "spec": ">=1.1.10 <2.0.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-jcore/-/cordova-plugin-jcore-1.1.10.tgz",
-  "_shasum": "313d598eb3d3b81088afa3f78da509f179b43a11",
-  "_shrinkwrap": null,
-  "_spec": "cordova-plugin-jcore@^1.1.10",
-  "_where": "/Users/mzr/credan_app_hybrid",
-  "author": {
-    "name": "wilhantian, jiguang"
-  },
-  "bugs": {
-    "url": "https://github.com/jpush/cordova-plugin-jcore/issues"
-  },
+  "name": "cordova-plugin-jcore",
+  "version": "1.1.12",
+  "description": "jcore for cordova plugin",
   "cordova": {
     "id": "cordova-plugin-jcore",
     "platforms": [
@@ -59,17 +9,10 @@
       "ios"
     ]
   },
-  "dependencies": {},
-  "description": "jcore for cordova plugin",
-  "devDependencies": {},
-  "directories": {},
-  "dist": {
-    "integrity": "sha512-NpSHkqDTeUKLVExDNoPcl87TBAKbqM4X2uiovQMPDWKbP/LxbQDA3Aqjo1wZCUD0mJcpYNGOIaBYenOvdj2etA==",
-    "shasum": "313d598eb3d3b81088afa3f78da509f179b43a11",
-    "tarball": "https://registry.npmjs.org/cordova-plugin-jcore/-/cordova-plugin-jcore-1.1.10.tgz"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jpush/cordova-plugin-jcore"
   },
-  "gitHead": "41457a603d349ba7cf5ec0290a4f28dab49ab3c7",
-  "homepage": "https://github.com/jpush/cordova-plugin-jcore#readme",
   "keywords": [
     "jcore",
     "jpush",
@@ -77,23 +20,10 @@
     "cordova-android",
     "cordova-ios"
   ],
+  "author": "wilhantian, jiguang",
   "license": "MIT License",
-  "maintainers": [
-    {
-      "name": "jpush",
-      "email": "support@jpush.cn"
-    },
-    {
-      "name": "wilhantian",
-      "email": "wilhan.tian@gmail.com"
-    }
-  ],
-  "name": "cordova-plugin-jcore",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jpush/cordova-plugin-jcore.git"
+  "bugs": {
+    "url": "https://github.com/jpush/cordova-plugin-jcore/issues"
   },
-  "version": "1.1.10"
+  "homepage": "https://github.com/jpush/cordova-plugin-jcore#readme"
 }

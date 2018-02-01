@@ -1,7 +1,7 @@
 # JPush PhoneGap / Cordova Plugin
 
 [![Build Status](https://travis-ci.org/jpush/jpush-phonegap-plugin.svg?branch=master)](https://travis-ci.org/jpush/jpush-phonegap-plugin)
-[![release](https://img.shields.io/badge/release-3.2.12-blue.svg)](https://github.com/jpush/jpush-phonegap-plugin/releases)
+[![release](https://img.shields.io/badge/release-3.3.0-blue.svg)](https://github.com/jpush/jpush-phonegap-plugin/releases)
 [![platforms](https://img.shields.io/badge/platforms-iOS%7CAndroid-lightgrey.svg)](https://github.com/jpush/jpush-phonegap-plugin)
 [![weibo](https://img.shields.io/badge/weibo-JPush-blue.svg)](http://weibo.com/jpush?refer_flag=1001030101_&is_all=1)
 
@@ -11,7 +11,14 @@
 - 如需要短信验证码功能插件，可关注 [cordova-plugin-jsms](https://github.com/jpush/cordova-plugin-jsms)
 - 如需要统计分析功能插件，可关注 [cordova-plugin-janalytics](https://github.com/jpush/cordova-plugin-janalytics)
 
+注意：目前插件暂未支持 cordova-android 7.0.0，因此在添加 android platform 时，请指定 7.0.0 以下版本，例如 6.4.0。
+
 ## Install
+
+> 注意：
+>
+> - 应用的包名一定要和 APP_KEY 对应应用的包名一致，否则极光推送服务无法注册成功。
+> - 在使用 8 或以上版本的 Xcode 调试 iOS 项目时，需要先在项目配置界面的 Capabilities 中打开 Push Notifications 开关。
 
 - 通过 Cordova Plugins 安装，要求 Cordova CLI 5.0+：
 
@@ -31,7 +38,28 @@
   cordova plugin add Your_Plugin_Path --variable APP_KEY=your_jpush_appkey
   ```
 
-> 在使用 Xcode 8 调试 iOS 项目时，需要先在项目配置界面的 Capabilities 中打开 Push Notifications 开关。
+### Ionic
+
+如果使用了 Ionic，可以再安装 @jiguang-ionic/jpush 包，适配 ionic-native：
+
+```shell
+npm install --save @jiguang-ionic/jpush
+```
+
+然后在 *app.module.ts* 中增加：
+
+```js
+import { JPush } from '@jiguang-ionic/jpush';
+...
+  providers: [
+    ...
+    JPush,
+    ...
+  ]
+```
+
+具体可参考 ./ionic/example 中的文件。
+
 
 ## Usage
 
@@ -72,14 +100,13 @@
 Android 因为各 Rom 的高度定制化，不像 iOS 一样能有一个统一的管理，如果在 Android 中想自定义通知铃声，推荐通过 JPush 推送自定义
 消息，之后在 `jpush.receiveMessage` 事件监听中通过 [Cordova Local-Notification Plugin](https://github.com/katzer/cordova-plugin-local-notifications) 触发通知，再配合 [Cordova Background Plugin](https://github.com/katzer/cordova-plugin-background-mode) 插件保证应用的后台运行。
 
-#### 如果让通知内容像 iOS 一样换行展示？
+#### 如何让通知内容像 iOS 一样自动换行展示？
 
 [#267](https://github.com/jpush/jpush-phonegap-plugin/issues/267)
 
 #### 关闭 App 后收不到通知
 
-Android 的推送通过长连接的方式实现，只有在连接保持的情况下才能收到通知。而有的第三方 ROM 会限制一般应用服务的自启动，也就是
-在退出应用后，应用的所有服务均被杀死，且无法自启动，所以就会收不到通知。
+Android 的推送通过长连接的方式实现，只有在保持连接的情况下才能收到通知。而有的第三方 ROM 会限制一般应用服务的自启动，也就是在退出应用后，应用的所有服务均被杀死，且无法自启动，所以就会收不到通知。
 
 目前 JPush 是做了应用互相拉起机制的，也就是当用户打开其他集成了 JPush 的应用时，你的应用也能同时收到推送消息。
 
@@ -97,10 +124,6 @@ Android 的推送通过长连接的方式实现，只有在连接保持的情况
 ```shell
 cordova platform update ios
 ```
-
-#### ionic 2 如何调用 API？
-
-[issue 179](https://github.com/jpush/jpush-phonegap-plugin/issues/179)
 
 #### PushConfig.plist 文件中的字段都是什么意思？
 

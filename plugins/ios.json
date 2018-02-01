@@ -28,14 +28,14 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.credan.saas"
         },
-        "jpush-phonegap-plugin": {
-            "APP_KEY": "923d3a1be6fae34804d6bd68",
-            "PACKAGE_NAME": "com.credan.saas"
-        },
         "cordova-plugin-geolocation": {
             "PACKAGE_NAME": "com.credan.saas"
         },
         "cordova-hot-code-push-plugin": {
+            "PACKAGE_NAME": "com.credan.saas"
+        },
+        "jpush-phonegap-plugin": {
+            "APP_KEY": "923d3a1be6fae34804d6bd68",
             "PACKAGE_NAME": "com.credan.saas"
         }
     },
