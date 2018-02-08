@@ -1,0 +1,122 @@
+CHCP plugin after prepare hook:
+    config-file set to http://wxapp.credan.com/app/chcp.json
+ANDROID_HOME=/Users/mzr/Library/Android/sdk
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home
+Subproject Path: CordovaLib
+The Task.leftShift(Closure) method has been deprecated and is scheduled to be removed in Gradle 5.0. Please use Task.doLast(Action) instead.
+	at build_c7f95zia8uvbhhqubnpezg2e0.run(/Users/mzr/credan/credan_jtapp_hybrid/platforms/android/build.gradle:142)
+Configuration 'compile' in project ':' is deprecated. Use 'implementation' instead.
+publishNonDefault is deprecated and has no effect anymore. All variants are now published.
+:preBuild UP-TO-DATE
+:CordovaLib:preBuild UP-TO-DATE
+:CordovaLib:preDebugBuild UP-TO-DATE
+:CordovaLib:checkDebugManifest UP-TO-DATE
+:CordovaLib:processDebugManifest UP-TO-DATE
+:preDebugBuild UP-TO-DATE
+:CordovaLib:compileDebugAidl UP-TO-DATE
+:compileDebugAidl UP-TO-DATE
+:CordovaLib:packageDebugRenderscript NO-SOURCE
+:compileDebugRenderscript UP-TO-DATE
+:checkDebugManifest UP-TO-DATE
+:generateDebugBuildConfig UP-TO-DATE
+:prepareLintJar UP-TO-DATE
+:generateDebugResValues UP-TO-DATE
+:generateDebugResources UP-TO-DATE
+:CordovaLib:compileDebugRenderscript UP-TO-DATE
+:CordovaLib:generateDebugResValues UP-TO-DATE
+:CordovaLib:generateDebugResources UP-TO-DATE
+:CordovaLib:packageDebugResources UP-TO-DATE
+:mergeDebugResources UP-TO-DATE
+:createDebugCompatibleScreenManifests UP-TO-DATE
+:processDebugManifest UP-TO-DATE
+:splitsDiscoveryTaskDebug UP-TO-DATE
+:CordovaLib:platformAttrExtractor UP-TO-DATE
+:CordovaLib:processDebugResources UP-TO-DATE
+:processDebugResources UP-TO-DATE
+:generateDebugSources UP-TO-DATE
+:CordovaLib:generateDebugBuildConfig UP-TO-DATE
+:CordovaLib:prepareLintJar UP-TO-DATE
+:CordovaLib:generateDebugSources UP-TO-DATE
+:CordovaLib:javaPreCompileDebug UP-TO-DATE
+:CordovaLib:compileDebugJavaWithJavac UP-TO-DATE
+:CordovaLib:processDebugJavaRes NO-SOURCE
+:CordovaLib:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:javaPreCompileDebug UP-TO-DATE
+:compileDebugJavaWithJavac UP-TO-DATE
+:compileDebugNdk NO-SOURCE
+:compileDebugSources UP-TO-DATE
+:mergeDebugShaders UP-TO-DATE
+:compileDebugShaders UP-TO-DATE
+:generateDebugAssets UP-TO-DATE
+:CordovaLib:mergeDebugShaders UP-TO-DATE
+:CordovaLib:compileDebugShaders UP-TO-DATE
+:CordovaLib:generateDebugAssets UP-TO-DATE
+:CordovaLib:mergeDebugAssets UP-TO-DATE
+:mergeDebugAssets UP-TO-DATE
+:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:transformClassesWithMultidexlistForDebug UP-TO-DATE
+:transformDexArchiveWithDexMergerForDebugDex: Error converting bytecode to dex:
+Cause: com.android.dex.DexException: Multiple dex files define Lcn/jiguang/d/a/e;
+    UNEXPECTED TOP-LEVEL EXCEPTION:
+    com.android.dex.DexException: Multiple dex files define Lcn/jiguang/d/a/e;
+    
+com.android.dex.DexException: Multiple dex files define Lcn/jiguang/d/a/e;
+	at com.android.dx.merge.DexMerger.readSortableTypes(DexMerger.java:661)
+	at com.android.dx.merge.DexMerger.getSortedTypes(DexMerger.java:616)
+	at com.android.dx.merge.DexMerger.mergeClassDefs(DexMerger.java:598)
+	at com.android.dx.merge.DexMerger.mergeDexes(DexMerger.java:171)
+	at com.android.dx.merge.DexMerger.merge(DexMerger.java:198)
+	at com.android.builder.dexing.DexArchiveMergerCallable.call(DexArchiveMergerCallable.java:61)
+	at com.android.builder.dexing.DexArchiveMergerCallable.call(DexArchiveMergerCallable.java:36)
+	at java.util.concurrent.ForkJoinTask$AdaptedCallable.exec(ForkJoinTask.java:1424)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':transformDexArchiveWithDexMergerForDebug'.
+> com.android.build.api.transform.TransformException: com.android.dex.DexException: Multiple dex files define Lcn/jiguang/d/a/e;
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1s
+36 actionable tasks: 1 executed, 35 up-to-date
+Error: /Users/mzr/credan/credan_jtapp_hybrid/platforms/android/gradlew: Command failed with exit code 1 Error output:
+Dex: Error converting bytecode to dex:
+Cause: com.android.dex.DexException: Multiple dex files define Lcn/jiguang/d/a/e;
+    UNEXPECTED TOP-LEVEL EXCEPTION:
+    com.android.dex.DexException: Multiple dex files define Lcn/jiguang/d/a/e;
+    
+com.android.dex.DexException: Multiple dex files define Lcn/jiguang/d/a/e;
+	at com.android.dx.merge.DexMerger.readSortableTypes(DexMerger.java:661)
+	at com.android.dx.merge.DexMerger.getSortedTypes(DexMerger.java:616)
+	at com.android.dx.merge.DexMerger.mergeClassDefs(DexMerger.java:598)
+	at com.android.dx.merge.DexMerger.mergeDexes(DexMerger.java:171)
+	at com.android.dx.merge.DexMerger.merge(DexMerger.java:198)
+	at com.android.builder.dexing.DexArchiveMergerCallable.call(DexArchiveMergerCallable.java:61)
+	at com.android.builder.dexing.DexArchiveMergerCallable.call(DexArchiveMergerCallable.java:36)
+	at java.util.concurrent.ForkJoinTask$AdaptedCallable.exec(ForkJoinTask.java:1424)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':transformDexArchiveWithDexMergerForDebug'.
+> com.android.build.api.transform.TransformException: com.android.dex.DexException: Multiple dex files define Lcn/jiguang/d/a/e;
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1s

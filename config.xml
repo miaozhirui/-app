@@ -64,8 +64,6 @@
     <chcp>
         <config-file url="http://wxapp.credan.com/app/chcp.json" />
     </chcp>
-    <engine name="android" spec="^6.4.0" />
-    <engine name="ios" spec="^4.5.4" />
     <plugin name="cordova-hot-code-push-plugin" spec="^1.5.3" />
     <plugin name="cordova-plugin-brightness" spec="^0.1.5" />
     <plugin name="cordova-plugin-contacts" spec="^3.0.0" />
@@ -75,7 +73,7 @@
     <plugin name="cordova-plugin-inappbrowser" spec="^1.7.2" />
     <plugin name="cordova-plugin-splashscreen" spec="^4.1.0" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
-    <plugin name="jpush-phonegap-plugin" spec="^3.2.12">
-        <variable name="APP_KEY" value="923d3a1be6fae34804d6bd68" />
-    </plugin>
+   
+    <engine name="android" spec="^6.4.0" />
+    <engine name="ios" spec="^4.5.4" />
 </widget>

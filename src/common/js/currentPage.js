@@ -3,6 +3,7 @@ import storage from 'good-storage';
 import jpush from './listen-native/jpush.js';
 import contact from './listen-native/contact.js';//获取联系人信息
 import Location from './listen-native/location.js';//获取地理位置
+import Device from './listen-native/device.js'//获取设备信息
 
 let currentPage = {
 
@@ -12,22 +13,23 @@ let currentPage = {
         this.initElement();//初始化元素
         this.bindEvent();//bind事件
         this.initUrlStack();//初始化路由栈
+
     },
 
     initDevice() {
  
         if(process.env.NODE_ENV == 'mock' || process.env.NODE_ENV == 'test' || process.env.NODE_ENV == 'production' ) {
-      
+            
             document.addEventListener('deviceready', this.onDeviceReady, false);
 
         } 
     },
 
     onDeviceReady() {
-        
         // jpush.init();
         contact.init();
         (new Location()).init();
+        (new Device()).init();
     },
 
     initElement() {

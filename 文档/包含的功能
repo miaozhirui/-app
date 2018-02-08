@@ -1,3 +1,6 @@
 1.热加载
 2.通讯录信息的获取
 3.地理位置的获取，
+ <plugin name="jpush-phonegap-plugin" spec="^3.2.12">
+        <variable name="APP_KEY" value="923d3a1be6fae34804d6bd68" />
+    </plugin>

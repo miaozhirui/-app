@@ -9,3 +9,8 @@
     <string>拒绝可能导致申请失败哦!</string>
     <key>NSContactsUsageDescription</key>
     <string>拒绝可能导致申请失败哦</string>
+
+config.xml 配置文件
+ <plugin name="jpush-phonegap-plugin" spec="^3.2.12">
+        <variable name="APP_KEY" value="923d3a1be6fae34804d6bd68" />
+</plugin>
