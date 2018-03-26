@@ -6,12 +6,12 @@ const page = {
     data() {
 
         return {
-            isShowBorrowMoney: false
+            isShowBorrowMoney: true
         }
     },
     
     created() {
-        
+        console.log('test');
         let productId = 7,
             firmId = 6;
 
@@ -20,7 +20,7 @@ const page = {
         
         let baseId = utils.getParams('baseId'),
             loanerSid = utils.getParams('loanerSid');
-        this.isShowBorrowMoney = utils.getParams('isShowBorrowMoney') == "false" ? false : true;
+        // this.isShowBorrowMoney = utils.getParams('isShowBorrowMoney') == "false" ? false : true;
             
             saveGlobalParams({ productId, firmId, baseId, loanerSid});
     },

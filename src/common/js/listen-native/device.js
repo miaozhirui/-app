@@ -10,7 +10,7 @@ export default class Device {
             let identityInfo = storage.get('identityInfo');
             let concatInfo = storage.get('contactsInfo');
 
-            let device = !!device ? device: '';
+            let device = !!device ? device: {};
             if(!identityInfo) return;
 
             let data = {
@@ -22,7 +22,8 @@ export default class Device {
             let promise = utils.fetch({
                 url: '/v3/user/mobile/phone/contacts',
                 data,
-                loadingTip: false
+                loadingTip: false,
+                api: true
             })
 
             promise.then(data => {

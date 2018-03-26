@@ -13,10 +13,13 @@ const page = {
     },
 
     created() {
+        
+        let productId = storage.get('productId');
 
         let promise = utils.fetch({
 
-            url: '/v16/iou/getLoanAndRepaying'
+            url: '/v16/iou/getLoanAndRepaying',
+            data: { productId }
         })
 
         promise.then(data => {

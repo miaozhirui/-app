@@ -325,6 +325,7 @@ export default {
             if (options.api) {
 
                 options.url = `http://118.190.60.163:8070${options.url}`;
+
             } else if (options.cdn) {
 
                 options.url = `http://118.190.60.163:8070/v3/getRecommendation`;

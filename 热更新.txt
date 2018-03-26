@@ -1,0 +1,13 @@
+1. 源码修改完之后，打包
+    npm run test //测试环境
+    npm run build //正式环境
+
+2. cordova-hcp build会在www下面生成chcp.josn文件，在json文件里面添加以下内容
+
+  "content_url": "http://wxapp.credan.com/app",
+  "update": "now"
+
+3. 上传文件
+    scp -r /Users/mzr/credan/credan_jtapp_hybrid/www/** root@wxapp.credan.com:/usr/local/www/app
+
+4. 打开app看文件是否发生了变化了

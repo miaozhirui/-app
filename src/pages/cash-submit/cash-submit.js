@@ -30,15 +30,8 @@ const page = {
 
     created() {
 
-        // if (!storage.get('gpsMsg') || !storage.get('gpsMsg').latitude) {
-
-        //     this.showGpsBox = true
-        // }
-
-        // this.productId = utils.getParams('productId')
+    
         this.productId = storage.get('productId');
-        // this.idenVerify = utils.getParams('idenVerify') == 'true' ? true : '';
-        console.log(storage.session.get('idenVerify'))
         this.idenVerify = !!storage.session.get('idenVerify') ? true: false;
 
         this.judgeIsOperatorVerify();
@@ -52,7 +45,7 @@ const page = {
                 merchantId :   "18fd13cc9aa611e6afb66c92bf314c17",
                  productType :  this.productId,
                  type :  0
-
+                
             },
             api: true
         })
@@ -212,7 +205,24 @@ const page = {
                 }
 
                 //跳到rong360运营商验证，验证通过之后的回调地址(http://uctest.credan.com/v1.5.1/rong360back.html?userId=d9a6e129762142bcab29e4ec1aade185&outUniqueId=20171225145920644b6883e8f44eceb48500e88aebc987&state=login)
-                location.href = data;
+                // location.href = data;
+
+                let ref = cordova.InAppBrowser.open(data, '_blank', 'location=no');
+                ref.addEventListener('loadstart', event => {
+                    
+                    let url = event.url;
+
+                    if(url.indexOf('outUniqueId') > -1){
+                    
+                        let operatorVerifyBtn = document.getElementById('operatorVerify')
+
+                        operatorVerifyBtn.setAttribute("style", "color: #9A9A9A");
+
+                        operatorVerifyBtn.value = "已认证"
+
+                        ref.close();
+                    }
+                })
             })
 
         },
@@ -269,7 +279,8 @@ const page = {
                                 params: params,
                                 sign: sign
                             },
-                            'api': true
+                            'api': true,
+                            isNeedIdentity: false
                         });
                         var _that = this;
                         promise2.then(req2 => {
