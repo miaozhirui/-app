@@ -3,12 +3,12 @@ var fs = require('fs');
 
 
 module.exports = function(app) {
-
+ 
     var pageDir = path.join(__dirname, '../pages');
 
     var parentPages = fs.readdirSync(pageDir);
     var allPages = [];
-
+  
     parentPages.forEach(function(item) {
 
         var stat = fs.statSync(path.join(pageDir, item));
@@ -42,17 +42,17 @@ module.exports = function(app) {
 
         if(stat.isDirectory()){
 
-            var mockDataFile = path.join(item, 'mock/index.js');
-
+            var mockDataFile = path.join(item, 'index.js');
+        
             var fileIsExist = fs.existsSync(mockDataFile);
 
             if(fileIsExist) {
-
+                // console.log(mockDataFile);
                 var mockData = require(mockDataFile);
                 // console.log(mockData)
 
                 for(let i in mockData){
-
+                
                     app.all(i, mockData[i]);
                 }
             }

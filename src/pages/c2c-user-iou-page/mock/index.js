@@ -27,7 +27,7 @@ module.exports = {
         
         res.json({
 
-            code: 403,
+            code: 0,
             data: "",
             message: '登陆验证失败' 
         })
