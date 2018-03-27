@@ -9,16 +9,36 @@ class PullMonster {
 
         this.phone = phone;
 
-        let params = {
+        //拉起怪兽的验证码
+        // this.monster(phone);
+        
+        // 默认的获取验证码
+        this.getCode(phone);
 
-            phone: phone
-        }
+    }
 
+    getCode() {
+        
+        let phone = this.phone;
+        let promise = utils.fetch({
+
+            url: '/wx/sendVerificationCode',
+            data: {
+                phone,
+                firmId: 6
+            },
+            isNeedIdentity: false
+        })
+
+    }
+
+    monster(phone) {
+        
         let iframe = document.createElement('iframe');
 
         let domain;
 
-        if(process.env.NODE_ENV === 'test' || process.env.NODE_ENV === 'mocktest') {
+        if (process.env.NODE_ENV === 'test' || process.env.NODE_ENV === 'mocktest') {
 
             domain = "http://uctest.credan.com"
         } else {
@@ -27,7 +47,7 @@ class PullMonster {
         }
         iframe.src = `${domain}/c2c/pages/monster-page.html?phone=${phone}`;
         // iframe.src = `${domain}/${process.env.NODE_PRODUCT}/pages/monster-page.html?phone=${phone}`;
-        
+
         // iframe.src = `http://localhost:8080/pages/monster-page.html?phone=${phone}`;
         // iframe.src = `http://app.credan.com/chao-city/yanzheng.html?${phone}`;
         iframe.id = "aiframe2"
@@ -42,7 +62,7 @@ class PullMonster {
         document.body.appendChild(iframe);
 
         window.addEventListener('message', e => {
-            
+
             let obj = document.getElementById("aiframe2");
 
             if (obj) {
@@ -50,10 +70,7 @@ class PullMonster {
             }
 
         }, false)
-
-        return;
     }
-
 }
 
 

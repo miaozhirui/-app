@@ -24,5 +24,15 @@ module.exports = {
         }
         
         res.json(result)
+    },
+    "/wx/sendVerificationCode": function(req, res) {
+
+        var result = {
+            code: 0,
+            data: true,
+            message: '提示信息'
+        }
+
+        res.json(result);
     }
 }

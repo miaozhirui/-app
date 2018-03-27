@@ -36,7 +36,7 @@ const page = {
             let data = {
 
                 aheadRepay: 0,
-                planId: item.planId,
+                planId: item.repayingSid,
                 fundRepayAccountId: item.fundRepayAccountId,
                 redirectUrl: location.href
             }
@@ -57,7 +57,7 @@ const page = {
                         
                     })
                     
-                    storage.set('payInfo', JSON.stringify(data.data));
+                    storage.set('payInfo', data.data);
                     
                     utils.go("ll2pay-page");
                 } else {
@@ -103,7 +103,7 @@ const page = {
 
             if (item.status == 5) {//签字完成
 
-                return "等待审核签字"
+                return "放款中"
             }
 
             if (item.status == 6) {//放款成功
@@ -124,6 +124,16 @@ const page = {
                 
                 // status 12:风控直接拒绝, 13:人工审核失败
                 return "审核失败";
+            }
+
+            if(item.status == 11) {
+
+                return '订单取消';
+            }
+
+            if(item.status == 15) {
+
+                return "待放款";
             }
 
             if(item.status == 16){ //签字审核通过，待打款

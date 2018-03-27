@@ -11,7 +11,6 @@ const page = {
     },
     
     created() {
-        console.log('test');
         let productId = 7,
             firmId = 6;
 

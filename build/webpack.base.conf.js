@@ -112,7 +112,8 @@ module.exports = webpackConfig;
 
 var dir = utils.getHtmlEntry(['./src/pages']);
 
-// console.log(dir)
+var allTpls = utils.getTpls();
+
 dir.forEach((pathname, index) => {
 
     var pagename = `pages/${pathname}`;
@@ -121,7 +122,8 @@ dir.forEach((pathname, index) => {
     var conf = {
         filename: `${pagename}.html`,
         pageNav,
-        template: path.join(__dirname, '../src/pages/zcommon/tpl.ejs'),
+        // template: path.join(__dirname, '../src/pages/zcommon/tpl.ejs'),
+        template: allTpls[pathname],
         inject: true,
         chunksSortMode: 'dependency',
     }

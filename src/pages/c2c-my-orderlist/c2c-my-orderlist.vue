@@ -59,7 +59,7 @@
 
                             >{{ getSignatureText(item) }}</span>
 
-                            <span v-if="isShowGiveMoneyBtn(item)" @click="clickGiveMoneyBtn(item)">还款</span>
+                            <span class="give-money" v-if="isShowGiveMoneyBtn(item)" @click="clickGiveMoneyBtn(item)">还款</span>
 
                             
                         </div>

@@ -227,3 +227,36 @@ exports.getLocalIp = function() {
 
     return localIp;
 }
+
+
+exports.getTpls = function() {
+
+    // var tplCommonPath = path.join(__dirname, `../src/pages/${process.env.NODE_PRODUCT}/`);
+    var tplCommonPath = path.join(__dirname, `../src/pages/`);
+
+    var files = fs.readdirSync(tplCommonPath);
+
+    var allTpls = {};
+
+    files = files.filter(function(item) {
+
+        var stats = fs.statSync(tplCommonPath + item);
+
+        if (stats.isDirectory() && (item != 'zcommon')) {
+
+            let tplPath = `${tplCommonPath}${item}/tpl/tpl.ejs`;
+
+            if (fs.existsSync(tplPath)) {
+
+                allTpls[item] = tplPath
+            } else {
+
+                allTpls[item] = `${tplCommonPath}zcommon/tpl.ejs`;
+            }
+        }
+
+    })
+
+    return allTpls;
+
+}
