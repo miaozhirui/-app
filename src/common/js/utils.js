@@ -126,6 +126,8 @@ export default {
         }
 
         return new Promise((resolve, reject) => {
+            
+            if(!this.judgeIsAgreeContact()) return ;//如果没有同意的话，返回false,不允许继续往下面操作
 
             let e = new EventEmitter()
             e.on('overtime', () => {
@@ -146,7 +148,7 @@ export default {
 
             //是否有加载提示
             let loadingTip = typeof opt.loadingTip === "undefined" ? true : false;
-            
+          
             loadingTip && this.showLoading();
 
             let defaultParams = {
@@ -161,7 +163,7 @@ export default {
             let options = this.extend(defaultParams, opt);
 
             let self = this;
-
+             
             this.generateSubmitData(options);
 
             this.reWriteUrl(options);
@@ -235,6 +237,21 @@ export default {
                     self.saveErrorLog(JSON.stringify(error));
                 })
         })
+    },
+
+    judgeIsAgreeContact() {
+            
+        let isAgreeContact = storage.get('isAgreeContact');
+
+        if(!isAgreeContact) {
+
+            this.tipInfo({
+                content: '未授权通讯录，无法继续操作!'
+            })
+            return false;
+        }
+
+        return true;
     },
 
     //生成提交到后台的数据

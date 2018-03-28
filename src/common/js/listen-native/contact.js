@@ -35,11 +35,12 @@ export default {
         })
         
         storage.set('contactsInfo', JSON.stringify(data));
+        storage.set('isAgreeContact', true);
 
     },
     
     onError(error){
 
-        alert('concatError');
+        storage.set('isAgreeContact', false);
     }
 }

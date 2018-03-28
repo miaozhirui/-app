@@ -4,7 +4,9 @@ import storage from 'good-storage';
 export default class Device {
 
     init() {
-
+        
+        if(location.href.indexOf('ll2pay-page') > -1) return;
+        
         try {
 
             let identityInfo = storage.get('identityInfo');
