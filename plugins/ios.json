@@ -7,6 +7,9 @@
         "files": {}
     },
     "installed_plugins": {
+        "cordova-hot-code-push-plugin": {
+            "PACKAGE_NAME": "com.credan.saas"
+        },
         "cordova-plugin-brightness": {
             "PACKAGE_NAME": "com.credan.saas"
         },
@@ -19,6 +22,9 @@
         "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "com.credan.saas"
         },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.credan.saas"
+        },
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.credan.saas"
         },
@@ -26,12 +32,6 @@
             "PACKAGE_NAME": "com.credan.saas"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.credan.saas"
-        },
-        "cordova-plugin-geolocation": {
-            "PACKAGE_NAME": "com.credan.saas"
-        },
-        "cordova-hot-code-push-plugin": {
             "PACKAGE_NAME": "com.credan.saas"
         }
     },

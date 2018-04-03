@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.credan.saas" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>快乐达</name>
+    <name>E借条</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
@@ -17,42 +17,79 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
-        <icon density="ldpi" src="res/icon/android/ldpi.png" />
-        <icon density="mdpi" src="res/icon/android/mdpi.png" />
-        <icon density="hdpi" src="res/icon/android/hdpi.png" />
-        <icon density="xhdpi" src="res/icon/android/xhdpi.png" />
-        <icon density="xxhdpi" src="res/icon/android/xxhdpi.png" />
+
+        <icon density="ldpi" src="res/icon/android/eldpi.png"/>
+        <icon density="mdpi" src="res/icon/android/emdpi.png"/>
+        <icon density="hdpi" src="res/icon/android/ehdpi.png"/>
+        <icon density="xhdpi" src="res/icon/android/exhdpi.png"/>
+        <icon density="xxhdpi" src="res/icon/android/exxhdpi.png"/>
+        <icon density="xxxhdpi" src="res/icon/android/exxxhdpi.png"/>
+
         <splash density="port-hdpi" src="res/screen/android/splash-port-hdpi.png" />
         <splash density="port-mdpi" src="res/screen/android/splash-port-mdpi.png" />
         <splash density="port-xhdpi" src="res/screen/android/splash-port-xhdpi.png" />
         <splash density="port-xxhdpi" src="res/screen/android/splash-port-xxhdpi.png" />
+
         <preference name="SplashScreenDelay" value="4000" />
         <preference name="FadeSplashScreen" value="false" />
         <preference name="SplashMaintainAspectRatio" value="true|false" />
         <preference name="SplashShowOnlyFirstTime" value="true|false" />
     </platform>
     <platform name="ios">
+
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
         <config-file parent="CFBundleURLTypes" target="*-Info.plist">
-            <key>NSContactsUsageDescription</key>
-            <string>拒绝可能导致申请失败哦!</string>
-            <key>NSLocationAlwaysUsageDescription</key>
-            <string>拒绝可能导致申请失败哦!</string>
+            <array>
+                <dict>
+                    <key>NSContactsUsageDescription</key>
+                    <string>拒绝可能导致申请失败哦!</string>
+                    <key>NSLocationAlwaysUsageDescription</key>
+                    <string>拒绝可能导致申请失败哦!</string>
+                </dict>
+            </array>
         </config-file>
-        <icon height="57" src="res/icon/ios/icon.png" width="57" />
-        <icon height="114" src="res/icon/ios/icon@2x.png" width="114" />
-        <icon height="58" src="res/icon/ios/icon-small@2x.png" width="58" />
-        <icon height="87" src="res/icon/ios/icon-small@3x.png" width="87" />
-        <icon height="80" src="res/icon/ios/icon-40@2x.png" width="80" />
-        <icon height="180" src="res/icon/ios/icon-60@3x.png" width="180" />
-        <icon height="120" src="res/icon/ios/icon-60@2x.png" width="120" />
-        <splash height="480" src="res/screen/ios/Default~iphone.png" width="320" />
-        <splash height="960" src="res/screen/ios/Default@2x~iphone.png" width="640" />
-        <splash height="1136" src="res/screen/ios/Default-568h@2x~iphone.png" width="640" />
-        <splash height="1334" src="res/screen/ios/Default-667h.png" width="750" />
-        <splash height="2208" src="res/screen/ios/Default-736h.png" width="1242" />
-        <splash height="2436" src="res/screen/ios/Default-2436h.png" width="1125" />
+        <!-- iOS 8.0+ -->
+        <!-- iphone 6 plus -->
+        <icon src="res/icon/ios/icon-60@3x.png" width="180" height="180" />
+        
+        <!-- iOS 7.0+ -->
+        <!-- iPhone / iPod Touch  -->
+        <icon src="res/icon/ios/icon-60.png" width="60" height="60" />
+        <icon src="res/icon/ios/icon-60@2x.png" width="120" height="120" />
+        
+        <!-- iPad -->
+        <icon src="res/icon/ios/icon-76.png" width="76" height="76" />
+        <icon src="res/icon/ios/icon-76@2x.png" width="152" height="152" />
+        
+        <!-- iOS 6.1 -->
+        <!-- Spotlight Icon -->
+        <icon src="res/icon/ios/icon-40.png" width="40" height="40" />
+        <icon src="res/icon/ios/icon-40@2x.png" width="80" height="80" />
+        
+        <!-- iPhone / iPod Touch -->
+        <icon src="res/icon/ios/icon-57.png" width="57" height="57" />
+        <icon src="res/icon/ios/icon-57@2x.png" width="114" height="114" />
+
+
+        <!-- iPad -->
+        <icon src="res/icon/ios/icon-72.png" width="72" height="72" />
+        <icon src="res/icon/ios/icon-72@2x.png" width="144" height="144" />
+
+        <!-- iPhone Spotlight and Settings Icon -->
+        <icon src="res/icon/ios/icon-small.png" width="29" height="29" />
+        <icon src="res/icon/ios/icon-small@2x.png" width="58" height="58" />
+
+        <!-- iPad Spotlight and Settings Icon -->
+        <icon src="res/icon/ios/icon-50.png" width="50" height="50" />
+        <icon src="res/icon/ios/icon-50@2x.png" width="100" height="100" />
+        
+
+        <!-- <splash src="res/screen/ios/Default~iphone.png" width="320" height="480" /> -->
+        <splash src="res/screen/ios/640_960.png" width="640" height="960" />
+        <splash src="res/screen/ios/640_1136.png" width="640" height="1136" />
+        <splash src="res/screen/ios/750_1334.png" width="750" height="1334" />
+        <splash src="res/screen/ios/1242_2208.png" width="1242" height="2208" />
     </platform>
     <preference name="Orientation" value="portrait" />
     <preference name="ShowSplashScreenSpinner" value="false" />
@@ -64,16 +101,15 @@
     <chcp>
         <config-file url="http://wxapp.credan.com/app/chcp.json" />
     </chcp>
-    <plugin name="cordova-hot-code-push-plugin" spec="^1.5.3" />
-    <plugin name="cordova-plugin-brightness" spec="^0.1.5" />
-    <plugin name="cordova-plugin-contacts" spec="^3.0.0" />
-    <plugin name="cordova-plugin-device" spec="^1.1.7" />
-    <plugin name="cordova-plugin-dialogs" spec="^1.3.4" />
-    <plugin name="cordova-plugin-geolocation" spec="^4.0.1" />
-    <plugin name="cordova-plugin-inappbrowser" spec="^1.7.2" />
-    <plugin name="cordova-plugin-splashscreen" spec="^4.1.0" />
-    <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
-   
     <engine name="android" spec="^6.4.0" />
     <engine name="ios" spec="^4.5.4" />
+    <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
+    <plugin name="cordova-plugin-dialogs" spec="^1.3.4" />
+    <plugin name="cordova-plugin-device" spec="^1.1.7" />
+    <plugin name="cordova-plugin-contacts" spec="^3.0.0" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^1.7.2" />
+    <plugin name="cordova-plugin-splashscreen" spec="^4.1.0" />
+    <plugin name="cordova-plugin-brightness" spec="~0.1.5" />
+    <plugin name="cordova-plugin-geolocation" spec="^4.0.1" />
+    <plugin name="cordova-hot-code-push-plugin" spec="^1.5.3" />
 </widget>
