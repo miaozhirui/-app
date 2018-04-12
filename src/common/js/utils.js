@@ -246,8 +246,12 @@ export default {
         if(!isAgreeContact) {
 
             this.tipInfo({
-                content: "无法操作，请先去'设置'里授权访问通讯录后再操作",
-                time:5
+                content: "授权通讯录才能继续操作",
+                callback: () => {
+
+                    this.go('guide-install-app')
+                }
+                
             })
 
 

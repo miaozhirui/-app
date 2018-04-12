@@ -1,135 +1,151 @@
 [
   {
     "file": "pages/c2c-apply-product.html",
-    "hash": "ce1fc526738ddede74efcb44f679195c"
+    "hash": "25184a31a96620039f7957eb5b996bea"
   },
   {
     "file": "pages/c2c-generate-iou.html",
-    "hash": "2ed1b6a2a7d17b326665ec28fc3c1d32"
+    "hash": "eb7088e6011e33d8b6e425a1757a1859"
   },
   {
     "file": "pages/c2c-home-page.html",
-    "hash": "63320a252b79e6d1a05a0b633b82a514"
+    "hash": "1d0393d96fb6c14bf35aa3c1e5507b0d"
   },
   {
     "file": "pages/c2c-my-orderlist.html",
-    "hash": "0bf080ad882baec37ae03a88d3c5a4e5"
+    "hash": "66520992495d086c18f97a0cb444ab93"
   },
   {
     "file": "pages/c2c-user-iou-page.html",
-    "hash": "dc5662624ad69cebf76681d10c183647"
+    "hash": "bde447b2d1485b8557d050898877a72b"
   },
   {
     "file": "pages/c2c-user-look-signature.html",
-    "hash": "d2aa5dc87732ce6ab7977d655e9eb7a0"
+    "hash": "606058a80cd0e78b16c66c5f70ceb337"
   },
   {
     "file": "pages/c2c-user-to-signature.html",
-    "hash": "2b26d308341a233d389d2f4ad9542a42"
+    "hash": "b982a02a521f6dd06d2ad84b3ecaeaf4"
   },
   {
     "file": "pages/cash-carrieroperator-submit.html",
-    "hash": "9e3be70be5a082f4c82743695581b560"
+    "hash": "0f92d5d3654f00126287c19dbc861ef4"
   },
   {
     "file": "pages/cash-contact-submit.html",
-    "hash": "fef4258133f913cb07ab3adb92397511"
+    "hash": "38c7522dff3630dc2e80dfe9c909e360"
   },
   {
     "file": "pages/cash-identity-submit.html",
-    "hash": "4542107e83acdf0879cbe7ba8133dd1a"
+    "hash": "4525d576570b98425f315d1a1944b817"
   },
   {
     "file": "pages/cash-moreinfo-submit.html",
-    "hash": "0cc20c9a6fc5fcbd551245637ee9697a"
+    "hash": "ffac5dafa5d5d27af40fd357a714e88f"
   },
   {
     "file": "pages/cash-submit.html",
-    "hash": "38460cc17d82d67eedb9806db72705ae"
+    "hash": "47f5cb4327595167f43f7d3f97d7c97d"
+  },
+  {
+    "file": "pages/guide-install-app.html",
+    "hash": "d02e0527d5fe5673020e75383f2dfa21"
   },
   {
     "file": "pages/ll2pay-page.html",
-    "hash": "ace3a9615046d3078346f765d8965fa2"
+    "hash": "113cecfc8f6b3fd258b018ae6d2db1bd"
   },
   {
     "file": "pages/monster-page.html",
-    "hash": "4bd3989c134721b94a44b17e7df12e62"
+    "hash": "29aa35331e25978cde762a743935f083"
   },
   {
     "file": "pages/timely-submit.html",
-    "hash": "f4def4afa12cfcb1f4d16fc429a218d2"
+    "hash": "c8620e1d303a11fc0923c7237576ffe8"
   },
   {
     "file": "pages/user-login.html",
-    "hash": "d443938ca5b244cc1aee2db61f0d87d9"
+    "hash": "924b85c0041852a53d2ccce81ce42f27"
   },
   {
-    "file": "static/css/pages/c2c-apply-product.99f8356acbd42a0b067772b94ff82807.css",
-    "hash": "99f8356acbd42a0b067772b94ff82807"
+    "file": "static/css/pages/c2c-apply-product.9851e08401bc3dedd0bcde6f203b97a3.css",
+    "hash": "9851e08401bc3dedd0bcde6f203b97a3"
   },
   {
-    "file": "static/css/pages/c2c-generate-iou.d093a1978283e1ceb9783875700c2f76.css",
-    "hash": "d093a1978283e1ceb9783875700c2f76"
+    "file": "static/css/pages/c2c-generate-iou.6fe7b68997f6bcde65988f4a6887c21a.css",
+    "hash": "6fe7b68997f6bcde65988f4a6887c21a"
   },
   {
-    "file": "static/css/pages/c2c-home-page.ff507f4d79622940be9820c7c874add4.css",
-    "hash": "ff507f4d79622940be9820c7c874add4"
+    "file": "static/css/pages/c2c-home-page.d5575725f9a983054bf453390817cc6f.css",
+    "hash": "d5575725f9a983054bf453390817cc6f"
   },
   {
-    "file": "static/css/pages/c2c-my-orderlist.a378c58d70272edb20c9312d45211ee9.css",
-    "hash": "a378c58d70272edb20c9312d45211ee9"
+    "file": "static/css/pages/c2c-my-orderlist.4275d449ac35d797bad380a07aa93dc7.css",
+    "hash": "4275d449ac35d797bad380a07aa93dc7"
   },
   {
-    "file": "static/css/pages/c2c-user-iou-page.b08d6c4bff8f5534dda025bbc72dbb86.css",
-    "hash": "b08d6c4bff8f5534dda025bbc72dbb86"
+    "file": "static/css/pages/c2c-user-iou-page.de1b05c7e45d032ec3cfbaebd57f0e50.css",
+    "hash": "de1b05c7e45d032ec3cfbaebd57f0e50"
   },
   {
-    "file": "static/css/pages/c2c-user-look-signature.8452981f4346eaec3b0b3bfc9d9bb46c.css",
-    "hash": "8452981f4346eaec3b0b3bfc9d9bb46c"
+    "file": "static/css/pages/c2c-user-look-signature.cf979fb2ffeb956fdaad4435ea33fa10.css",
+    "hash": "cf979fb2ffeb956fdaad4435ea33fa10"
   },
   {
-    "file": "static/css/pages/c2c-user-to-signature.a88c384ca1f48ae8fcdb90fc5c8b8a96.css",
-    "hash": "a88c384ca1f48ae8fcdb90fc5c8b8a96"
+    "file": "static/css/pages/c2c-user-to-signature.1bdfc1f251f19e645ee37a9eb9899bde.css",
+    "hash": "1bdfc1f251f19e645ee37a9eb9899bde"
   },
   {
-    "file": "static/css/pages/cash-carrieroperator-submit.60cdbfe56cf969a5ad23008ac1775338.css",
-    "hash": "60cdbfe56cf969a5ad23008ac1775338"
+    "file": "static/css/pages/cash-carrieroperator-submit.c4e704a81753ea60f51c3edd4944472a.css",
+    "hash": "c4e704a81753ea60f51c3edd4944472a"
   },
   {
-    "file": "static/css/pages/cash-contact-submit.ea6fdd09216c6a015fea0130d1a4bff5.css",
-    "hash": "ea6fdd09216c6a015fea0130d1a4bff5"
+    "file": "static/css/pages/cash-contact-submit.1be3a07821abd3be9c4e2c2bc19941fb.css",
+    "hash": "1be3a07821abd3be9c4e2c2bc19941fb"
   },
   {
-    "file": "static/css/pages/cash-identity-submit.c485a92e89daec73353360482bc2cb05.css",
-    "hash": "c485a92e89daec73353360482bc2cb05"
+    "file": "static/css/pages/cash-identity-submit.53d476e51d9c177ffdcb119cf74d622b.css",
+    "hash": "53d476e51d9c177ffdcb119cf74d622b"
   },
   {
-    "file": "static/css/pages/cash-moreinfo-submit.29511d18a9a6de843225a49081986612.css",
-    "hash": "29511d18a9a6de843225a49081986612"
+    "file": "static/css/pages/cash-moreinfo-submit.6a5a743a5173ce5a871d1b611069d75f.css",
+    "hash": "6a5a743a5173ce5a871d1b611069d75f"
   },
   {
-    "file": "static/css/pages/cash-submit.f72c8ec4c5ea26c4cff6e8105d9ae3fc.css",
-    "hash": "f72c8ec4c5ea26c4cff6e8105d9ae3fc"
+    "file": "static/css/pages/cash-submit.1fb0b96f93e616f02f7ac8373d5d5191.css",
+    "hash": "1fb0b96f93e616f02f7ac8373d5d5191"
   },
   {
-    "file": "static/css/pages/ll2pay-page.2ad6337b979f136bdf842e5355d4c048.css",
-    "hash": "2ad6337b979f136bdf842e5355d4c048"
+    "file": "static/css/pages/guide-install-app.4d8b3f9728c45f1c1e1fd858497b0215.css",
+    "hash": "4d8b3f9728c45f1c1e1fd858497b0215"
   },
   {
-    "file": "static/css/pages/monster-page.4139219cefd38b2f1e65ed79bddcc93e.css",
-    "hash": "4139219cefd38b2f1e65ed79bddcc93e"
+    "file": "static/css/pages/ll2pay-page.537d878dd1a51b5cb2d19f3145951815.css",
+    "hash": "537d878dd1a51b5cb2d19f3145951815"
   },
   {
-    "file": "static/css/pages/timely-submit.4bacac88e1a0987c915b91a69e1e2647.css",
-    "hash": "4bacac88e1a0987c915b91a69e1e2647"
+    "file": "static/css/pages/monster-page.ae48a8ac7eba51d3c3a1b154b44c3cc3.css",
+    "hash": "ae48a8ac7eba51d3c3a1b154b44c3cc3"
   },
   {
-    "file": "static/css/pages/user-login.20da6643fd3dade36f6799de078ede3b.css",
-    "hash": "20da6643fd3dade36f6799de078ede3b"
+    "file": "static/css/pages/timely-submit.12c52eeb4ef39a39b4c87500c46b6200.css",
+    "hash": "12c52eeb4ef39a39b4c87500c46b6200"
+  },
+  {
+    "file": "static/css/pages/user-login.d2e5996f7da21e7f2e5993f582bb3b2b.css",
+    "hash": "d2e5996f7da21e7f2e5993f582bb3b2b"
   },
   {
     "file": "static/images/8.6124f8c.png",
     "hash": "6124f8c8b8ddc5b74a8bfaf8518651a7"
+  },
+  {
+    "file": "static/images/android.90e9269.jpg",
+    "hash": "90e92699d7c6ea0eb4f54d23888ecd7f"
+  },
+  {
+    "file": "static/images/android.90e9269.png",
+    "hash": "90e92699d7c6ea0eb4f54d23888ecd7f"
   },
   {
     "file": "static/images/back-icon.png",
@@ -176,6 +192,14 @@
     "hash": "4eee0a9532cdef1521dc4032350930b6"
   },
   {
+    "file": "static/images/ios.bb8c931.jpg",
+    "hash": "bb8c931694af4d85bdfeb967c1cba607"
+  },
+  {
+    "file": "static/images/ios.bb8c931.png",
+    "hash": "bb8c931694af4d85bdfeb967c1cba607"
+  },
+  {
     "file": "static/images/lingdang.png",
     "hash": "001571610c23037c593989e76a562345"
   },
@@ -200,72 +224,76 @@
     "hash": "ab51051098a36016b0d2028dcad85e48"
   },
   {
-    "file": "static/js/manifest.c5fb4d956c7a022483b3.js",
-    "hash": "7ea361ac5d13940f03905f63e7181ad6"
+    "file": "static/js/manifest.9ecaec72f90b72274af3.js",
+    "hash": "236b968ddefe4dcc1e2f704941eef490"
   },
   {
-    "file": "static/js/pages/c2c-apply-product.fba93046b8da24be84fc.js",
-    "hash": "3201c3ac4add7358a42296ce94d3acfd"
+    "file": "static/js/pages/c2c-apply-product.1fda5a37df757188196c.js",
+    "hash": "20a133aa551bc3b79de6a24748086f5b"
   },
   {
-    "file": "static/js/pages/c2c-generate-iou.ae851875a49492e8b2e4.js",
-    "hash": "2a8a996b500d6ec5c1906d3983f6e99c"
+    "file": "static/js/pages/c2c-generate-iou.dcd6bb27dae026a78510.js",
+    "hash": "7064467251a51f48778a26efb9e4c924"
   },
   {
-    "file": "static/js/pages/c2c-home-page.41f6821f09c1bf58163d.js",
-    "hash": "ca7d462788c54b484c173370065db6d0"
+    "file": "static/js/pages/c2c-home-page.b949eba1be294419c132.js",
+    "hash": "722159a28ba254a2051529c62c7657aa"
   },
   {
-    "file": "static/js/pages/c2c-my-orderlist.9672d3fa916849b2d574.js",
-    "hash": "915781fdcfdcb54de31723cafa4cf954"
+    "file": "static/js/pages/c2c-my-orderlist.4b6de3c3f38bf6634e51.js",
+    "hash": "b3cc0bb2abd123a4a9385583c9ceeaa2"
   },
   {
-    "file": "static/js/pages/c2c-user-iou-page.06284241448bc04530ce.js",
-    "hash": "8f993eec4e0207ce25347a4b36d20dfa"
+    "file": "static/js/pages/c2c-user-iou-page.eeacb3a5f397f4d97be3.js",
+    "hash": "f2546a90b139b4865cf631e8bf6bf595"
   },
   {
-    "file": "static/js/pages/c2c-user-look-signature.6aa934657fafe83b1529.js",
-    "hash": "d2b6d25cafa110cfc92a82726734ab02"
+    "file": "static/js/pages/c2c-user-look-signature.83a39dac4c003ab84679.js",
+    "hash": "43cc05ca485d9432690b9d3d200b7fcd"
   },
   {
-    "file": "static/js/pages/c2c-user-to-signature.20b660a2f2402b72dcee.js",
-    "hash": "dbc798b56173ea85f0af1587d9f20641"
+    "file": "static/js/pages/c2c-user-to-signature.2da2ab5735d30beca0eb.js",
+    "hash": "ec0cbdb45c51f6ea8cbf2bb55ba8297e"
   },
   {
-    "file": "static/js/pages/cash-carrieroperator-submit.f0b40a4347ee10662eb1.js",
-    "hash": "421bdbb3c877655d0295aca2d10c75b6"
+    "file": "static/js/pages/cash-carrieroperator-submit.40cf9a0dd7d78f29cdb9.js",
+    "hash": "332b5481fa21302ff7098718e93aa685"
   },
   {
-    "file": "static/js/pages/cash-contact-submit.f5750e9190bbf0cf4bef.js",
-    "hash": "be780662a6c7ca834cb849a62567a7fd"
+    "file": "static/js/pages/cash-contact-submit.bef2c25575f2662dab1d.js",
+    "hash": "252b3b84158210416c08e3035abcdf9f"
   },
   {
-    "file": "static/js/pages/cash-identity-submit.a2d9eca85b0fd9022f27.js",
-    "hash": "83939eaccd9a8c8914c10a898b030fee"
+    "file": "static/js/pages/cash-identity-submit.77b54beaaeae43959aba.js",
+    "hash": "bc705d92001efba763f8005ebf9b4b7f"
   },
   {
-    "file": "static/js/pages/cash-moreinfo-submit.f1cec94ff1f78a43e008.js",
-    "hash": "64ad689fa788c573ab19650a54247370"
+    "file": "static/js/pages/cash-moreinfo-submit.d8957187e63fd84041b7.js",
+    "hash": "6e297ea412e095a50c684414afcf406d"
   },
   {
-    "file": "static/js/pages/cash-submit.a48caf49c7870f69938e.js",
-    "hash": "080d460b1d0c618fa297effd1bd05c1a"
+    "file": "static/js/pages/cash-submit.04cc3e2eb4d6accaf10a.js",
+    "hash": "dadc5476ad4ac9c56e5f22c3153ce3cf"
   },
   {
-    "file": "static/js/pages/ll2pay-page.fb9a95a7a974d9f33999.js",
-    "hash": "fecd2310bef2a574e7c6c26c986ce0e8"
+    "file": "static/js/pages/guide-install-app.a87e57c251243da67342.js",
+    "hash": "cf24673c72933fdcbc012c13e69f6e40"
   },
   {
-    "file": "static/js/pages/monster-page.4ddd8d40c526b44c4773.js",
-    "hash": "3ee37adf75080392bb44e7d8cd005ae1"
+    "file": "static/js/pages/ll2pay-page.5865c11697036d3c17f1.js",
+    "hash": "cdc27ff8db2facd1d4cbb8926689090c"
   },
   {
-    "file": "static/js/pages/timely-submit.c09a1ef5b05d7bd38f79.js",
-    "hash": "a7b87f5d9c72977988ef67014dc19e85"
+    "file": "static/js/pages/monster-page.23fa72ab812811c57193.js",
+    "hash": "4108a77dfb43b7536c33ad1606f9c253"
   },
   {
-    "file": "static/js/pages/user-login.7d7433ffd61df7999655.js",
-    "hash": "d627bcae85bed1909c3e4ad2e3bed10b"
+    "file": "static/js/pages/timely-submit.770f475aac8c75aa4d4d.js",
+    "hash": "617afeb5d9e975c25a6fc18b2ab749c8"
+  },
+  {
+    "file": "static/js/pages/user-login.c521ba2e74eaf4ce378e.js",
+    "hash": "c4ada623d4fc80a2d0ed354a0dea9c8d"
   },
   {
     "file": "static/js/pdf_viewer.js",
@@ -284,7 +312,7 @@
     "hash": "3a30ca9375a2a69d7be154e2c5cd0a7a"
   },
   {
-    "file": "static/js/vendor.8095dc3c597aa8cbd288.js",
-    "hash": "4916290ef53ed63a3659a8b127a865a5"
+    "file": "static/js/vendor.ad5544850cae579cd2a0.js",
+    "hash": "5abe3d4ffe66c2a0293433641dc9a058"
   }
 ]

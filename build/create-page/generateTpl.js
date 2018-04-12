@@ -1,7 +1,7 @@
 exports.vue = function(pageName) {
 
     var tpl = `<template>
-    <div class="${pageName}" v-cloak>
+    <div class="${pageName} fullscreen" v-cloak>
         
     </div>
 </template>

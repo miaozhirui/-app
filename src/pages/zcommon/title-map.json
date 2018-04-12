@@ -38,5 +38,11 @@
     },
     "user-login":{
         "title":"登录"
+    },
+    "guide-install-app":{
+        "title":"设置通讯录"
+    },
+    "c2c-user-to-signature":{
+        "title":"签名"
     }
 }
