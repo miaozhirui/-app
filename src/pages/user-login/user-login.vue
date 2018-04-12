@@ -42,5 +42,7 @@
             <div class="content" v-html="agreeContent"></div>
         </div>
         
+      
     </div>
+
 </template>

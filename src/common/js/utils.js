@@ -246,8 +246,11 @@ export default {
         if(!isAgreeContact) {
 
             this.tipInfo({
-                content: '未授权通讯录，无法继续操作!'
+                content: "无法操作，请先去'设置'里授权访问通讯录后再操作",
+                time:5
             })
+
+
             return false;
         }
 
